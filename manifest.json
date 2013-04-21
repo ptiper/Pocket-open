@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "Pocket link enhancer",
+  "description": "This extension enhances Pocket.",
+  "version": "0.0.1",
+
+  "permissions": [
+    "http://getpocket.com/",
+	"http://lemonde.fr/"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://getpocket.com/*"],
+      "js": ["myscript.js"]
+    }
+]
+}
